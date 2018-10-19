@@ -124,6 +124,7 @@
 		24806606217A074A00249AAA = {
 			isa = PBXGroup;
 			children = (
+				24806616217A074B00249AAA /* Main.storyboard */,
 				24806611217A074B00249AAA /* lab191018 */,
 				24806626217A074D00249AAA /* lab191018Tests */,
 				24806630217A074D00249AAA /* lab191018 WatchKit App */,
@@ -148,7 +149,6 @@
 			children = (
 				24806612217A074B00249AAA /* AppDelegate.swift */,
 				24806614217A074B00249AAA /* ViewController.swift */,
-				24806616217A074B00249AAA /* Main.storyboard */,
 				24806619217A074C00249AAA /* Assets.xcassets */,
 				2480661B217A074C00249AAA /* LaunchScreen.storyboard */,
 				2480661E217A074C00249AAA /* Info.plist */,
