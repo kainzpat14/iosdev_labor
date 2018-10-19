@@ -1,5 +1,5 @@
 //
-//  NotificationController.swift
+//  DoneInterfaceController.swift
 //  lab191018 WatchKit Extension
 //
 //  Created by Patrick Kainz and Patrick Papst on 19.10.18.
@@ -8,15 +8,15 @@
 
 import WatchKit
 import Foundation
-import UserNotifications
 
 
-class NotificationController: WKUserNotificationInterfaceController {
+class DoneInterfaceController: WKInterfaceController {
 
-    override init() {
-        // Initialize variables here.
-        super.init()
-        
+    var delegate: KeyboardInterfaceController?;
+    
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        delegate = context as? KeyboardInterfaceController
         // Configure interface objects here.
     }
 
@@ -30,9 +30,8 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
 
-    override func didReceive(_ notification: UNNotification) {
-        // This method is called when a notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
+    @IBAction func onClose() {
+        dismiss()
+        self.delegate?.done();
     }
 }

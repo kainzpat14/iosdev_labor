@@ -1,5 +1,5 @@
 //
-//  NotificationController.swift
+//  PickerInterfaceController.swift
 //  lab191018 WatchKit Extension
 //
 //  Created by Patrick Kainz and Patrick Papst on 19.10.18.
@@ -8,15 +8,21 @@
 
 import WatchKit
 import Foundation
-import UserNotifications
 
 
-class NotificationController: WKUserNotificationInterfaceController {
+class PickerInterfaceController: WKInterfaceController {
 
-    override init() {
-        // Initialize variables here.
-        super.init()
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        let range = 0...999999;
+        let pickerItems: [WKPickerItem] = range.map {
+            let pickerItem = WKPickerItem()
+            pickerItem.caption = String($0)+" km"
+            pickerItem.title = String($0)
+            return pickerItem
+        }
         
+        pickerKm.setItems(pickerItems);
         // Configure interface objects here.
     }
 
@@ -30,9 +36,5 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
 
-    override func didReceive(_ notification: UNNotification) {
-        // This method is called when a notification needs to be presented.
-        // Implement it if you use a dynamic notification interface.
-        // Populate your dynamic notification interface as quickly as possible.
-    }
+    @IBOutlet weak var pickerKm: WKInterfacePicker!
 }

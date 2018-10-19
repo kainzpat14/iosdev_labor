@@ -2,8 +2,8 @@
 //  InterfaceController.swift
 //  lab191018 WatchKit Extension
 //
-//  Created by Patrick Kainz on 19.10.18.
-//  Copyright © 2018 Patrick Kainz. All rights reserved.
+//  Created by Patrick Kainz and Patrick Papst on 19.10.18.
+//  Copyright © 2018 Patrick Kainz and Patrick Papst. All rights reserved.
 //
 
 import WatchKit

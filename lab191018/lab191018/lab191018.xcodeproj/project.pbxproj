@@ -21,6 +21,9 @@
 		24806643217A074D00249AAA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806642217A074D00249AAA /* ExtensionDelegate.swift */; };
 		24806645217A074D00249AAA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24806644217A074D00249AAA /* NotificationController.swift */; };
 		24806647217A074E00249AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24806646217A074E00249AAA /* Assets.xcassets */; };
+		249ECCD5217A111A004D2AEF /* KeyboardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249ECCD4217A111A004D2AEF /* KeyboardInterfaceController.swift */; };
+		249ECCD7217A1696004D2AEF /* DoneInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249ECCD6217A1696004D2AEF /* DoneInterfaceController.swift */; };
+		249ECCD9217A1C1C004D2AEF /* PickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249ECCD8217A1C1C004D2AEF /* PickerInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		24806646217A074E00249AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24806648217A074E00249AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24806649217A074E00249AAA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		249ECCD4217A111A004D2AEF /* KeyboardInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInterfaceController.swift; sourceTree = "<group>"; };
+		249ECCD6217A1696004D2AEF /* DoneInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneInterfaceController.swift; sourceTree = "<group>"; };
+		249ECCD8217A1C1C004D2AEF /* PickerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,9 @@
 				24806646217A074E00249AAA /* Assets.xcassets */,
 				24806648217A074E00249AAA /* Info.plist */,
 				24806649217A074E00249AAA /* PushNotificationPayload.apns */,
+				249ECCD4217A111A004D2AEF /* KeyboardInterfaceController.swift */,
+				249ECCD6217A1696004D2AEF /* DoneInterfaceController.swift */,
+				249ECCD8217A1C1C004D2AEF /* PickerInterfaceController.swift */,
 			);
 			path = "lab191018 WatchKit Extension";
 			sourceTree = "<group>";
@@ -368,8 +377,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24806645217A074D00249AAA /* NotificationController.swift in Sources */,
+				249ECCD7217A1696004D2AEF /* DoneInterfaceController.swift in Sources */,
 				24806643217A074D00249AAA /* ExtensionDelegate.swift in Sources */,
+				249ECCD5217A111A004D2AEF /* KeyboardInterfaceController.swift in Sources */,
 				24806641217A074D00249AAA /* InterfaceController.swift in Sources */,
+				249ECCD9217A1C1C004D2AEF /* PickerInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
