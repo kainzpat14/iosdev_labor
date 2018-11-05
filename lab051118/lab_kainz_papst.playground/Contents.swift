@@ -294,7 +294,22 @@ print(images.filter({(s) -> Bool in
 }).sorted().map({s in s.uppercased()}))
 
 
-
+// project class
+struct Ride {
+    let id : String? = nil
+    let timestampStart : Date
+    let timestampEnd : Date? = nil
+    let category : String
+    let purpose : String
+    let kilometerStart : Int
+    let kilometerEnd : Int? = nil
+    let coordinatesStart : (Double,Double)
+    let coordinatesEnd : (Double,Double)? = nil
+    
+    func isFinished() -> Bool{
+        return timestampEnd != nil
+    }
+}
 
 //
 // Swift Advanced will be covered in the next lab session:
