@@ -1,3 +1,5 @@
+// Patrick Papst and Patrick Kainz
+
 import Foundation
 import Dispatch
 import PlaygroundSupport
