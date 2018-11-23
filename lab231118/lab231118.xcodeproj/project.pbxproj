@@ -13,6 +13,7 @@
 		248EF3CC21A8752300DBCFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248EF3CB21A8752300DBCFAA /* Assets.xcassets */; };
 		248EF3CF21A8752300DBCFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248EF3CD21A8752300DBCFAA /* LaunchScreen.storyboard */; };
 		248EF3DA21A8752400DBCFAA /* lab231118Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248EF3D921A8752400DBCFAA /* lab231118Tests.swift */; };
+		248EF3E821A876BF00DBCFAA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248EF3E721A876BF00DBCFAA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		248EF3D521A8752400DBCFAA /* lab231118Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab231118Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		248EF3D921A8752400DBCFAA /* lab231118Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab231118Tests.swift; sourceTree = "<group>"; };
 		248EF3DB21A8752400DBCFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248EF3E721A876BF00DBCFAA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248EF3E821A876BF00DBCFAA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				248EF3C321A8752200DBCFAA /* lab231118 */,
 				248EF3D821A8752400DBCFAA /* lab231118Tests */,
 				248EF3C221A8752200DBCFAA /* Products */,
+				248EF3E421A875CD00DBCFAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,14 @@
 				248EF3DB21A8752400DBCFAA /* Info.plist */,
 			);
 			path = lab231118Tests;
+			sourceTree = "<group>";
+		};
+		248EF3E421A875CD00DBCFAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				248EF3E721A876BF00DBCFAA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +158,11 @@
 				TargetAttributes = {
 					248EF3C021A8752200DBCFAA = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					248EF3D421A8752400DBCFAA = {
 						CreatedOnToolsVersion = 10.1;
