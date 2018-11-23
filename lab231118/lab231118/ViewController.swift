@@ -17,7 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
-        
+        annotation.title = "FH Kapfenberg"
         annotation.coordinate = CLLocationCoordinate2D(latitude: 47.453990, longitude: 15.331747)
         map.addAnnotation(annotation)
     }
@@ -42,7 +42,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let userRect = MKMapRect(x: userPoint.x,y: userPoint.y,width: 0,height: 0)
         let annotationRect = MKMapRect(x: annotationPoint.x,y: annotationPoint.y,width: 0,height: 0)
         let unionRect = userRect.union(annotationRect)
-        let fittingRect = mapView.mapRectThatFits(unionRect, edgePadding: UIEdgeInsets(top: 40, left: 40, bottom: 40, right: 40))
+        let fittingRect = mapView.mapRectThatFits(unionRect, edgePadding: UIEdgeInsets(top: 100, left: 100, bottom: 100, right: 100))
         mapView.setVisibleMapRect(fittingRect, animated: true)
     }
     
