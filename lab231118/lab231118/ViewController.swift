@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  lab231118
 //
-//  Created by Patrick Kainz on 23.11.18.
-//  Copyright © 2018 Patrick Kainz. All rights reserved.
+//  Created by Patrick Kainz and Patrick Papst on 23.11.18.
+//  Copyright © 2018 Patrick Kainz and Patrick Papst. All rights reserved.
 //
 
 import UIKit
