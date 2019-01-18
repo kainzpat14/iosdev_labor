@@ -1,0 +1,8 @@
+https://github.com/kainzpat14/iosdev
+
+(b) Allow Sharing of (Contact/Company - Info) to FB/TW/Whatever-you-like 
+	PDF Sharing in ShareRidesViewController
+
+(d) Watch - iOS Data-Exchange
+	ConnectivityHandler on iOS Side
+	ServiceBridge on WatchOS Side
